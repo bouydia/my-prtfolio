@@ -1,0 +1,110 @@
+.navbar{
+  width: 100%;
+  height:60px;
+  padding: 2rem 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px lightgray solid;
+  z-index: 1000;
+  background-color: #ffff;
+  @media screen and (max-width:1000px){
+    padding: 2rem 3rem;
+  }
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+.navbar img{
+  max-width: 150px;
+}
+.menu-container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar .menu ul{
+    list-style-type: none;
+    display: flex;
+    li{
+        font-size: 1rem;
+        padding: .5rem;
+        margin: 0 2rem;
+        color: #767676;
+        font-weight: 500;
+        font-family: "Montserrat";
+        transition: all 0.3s ease;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: inherit;
+            text-transform: capitalize;
+        }
+        .svg {
+            display: none;
+        }
+        &:hover{
+            color: #000;
+            letter-spacing: 2px;
+        }
+        @media screen and (max-width:950px){
+            margin: 0 0.8rem;
+        }
+    }
+}
+.res-menu-container{
+    display: none;
+}
+.res-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding:.5rem 1.5rem;
+    border-left: 1px lightgray solid;
+    .toggls{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        margin-bottom: 2rem;
+        .icon{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .menu{
+        height: 50%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .menu ul{
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .menu ul li{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:770px){
+    .menu-container{
+        display: none;
+    }
+    .res-menu-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,88 @@
+.contact {
+  width: 100%;
+  overflow: hidden;
+}
+.contact .contact-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  div{
+    max-width: 100%;
+    height: auto;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    img{
+      max-width: 50px;
+      height: 50px
+    };
+    @media screen and (max-width:350px){
+      padding: 5px;
+      img{
+      max-width: 30px;
+      height: 30px
+    }
+    }
+  }
+  @media screen and (max-width:870px){
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.contact .fields {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact .fields .contact_form{
+  width: 600px;
+}
+.contact .fields .form-control {
+  padding: 10px;
+  margin-block:1.5rem;
+}
+.contact .fields h4{
+ margin: 2rem;
+}
+.contact .fields .form-control input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  font-style: italic;
+}
+.contact .fields .form-control input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.contact .fields .form-control textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 120px;
+  resize: none;
+  background-color: transparent;
+}
+.contact .fields textarea:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.contact .fields .btn_warpper{
+  text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 4rem 0 1rem;
+    p {
+    font-size: 15px;
+    color: #999;
+    font-family: "Montserrat";
+    line-height: 25px;
+    font-style: italic;
+    }
+}

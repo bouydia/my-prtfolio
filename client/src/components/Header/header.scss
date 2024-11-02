@@ -1,0 +1,109 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.header .home_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+.header .avatar {
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  border-radius: 100%;
+}
+.header .avatar .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url('../../assets/img/me.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: morph 8s ease-in-out infinite 1s;
+  background-blend-mode: multiply;
+  box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  filter: grayscale(100%);
+  overflow: hidden;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.header .details .name {
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+.header .details .job {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+.header .details .hi {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: max-content;
+  h5{
+    font-size: 36px !important;
+  }
+}
+@media screen and (max-width:920px){
+   .details .name {
+    font-size: 38px !important;
+  }
+  
+}
+@media screen and (max-width:770px){
+  .avatar {
+    min-width: 120px;
+    min-height: 120px;
+    margin-bottom: 2rem;
+  }
+  .home_content{
+    flex-direction: column;
+  }
+  .details .name {
+    font-size: 32px;
+    text-align: center;
+  }
+  .details h5 {
+    display: inline;
+  }
+  .details p{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
+  .details .hi{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+  }
+  .social {
+    text-align: center;
+  }
+}

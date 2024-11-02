@@ -1,0 +1,62 @@
+.social{
+    z-index: 100;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 10px;
+    
+}
+.social a{
+    display: block;
+    text-align: center;
+}
+.social svg{
+        fill: #111;
+        font-size: 1.5rem;
+}
+.social p{
+    font-size: 14px;
+    writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  min-width: 20px;
+}
+.social div{
+    height: 50px;
+    width: 2px;
+    margin:10px auto 5px;
+    background-color: black;
+}
+@media screen and (max-width:580px){
+    .social{
+    left: 5px; 
+    }
+    .social svg{
+        font-size: 1rem;
+    }
+    .social p{
+    font-size: 12px;
+    }
+}
+@media screen and (max-width:420px){
+    .social{
+        display: none;
+    }
+}
+
+.navigation-dot-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navigation-dot{
+    border-radius: 50%;
+    border:1px solid rgba(0, 0, 0, 0.785);
+    width: 15px;
+    height: 15px;
+    margin: 3px 0;
+}

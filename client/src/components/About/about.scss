@@ -1,0 +1,84 @@
+.about {
+  width: 100%;
+  position: relative;
+}
+.about .description {
+  width: 100%;
+  height: auto;
+}
+.about .description_inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+    gap: 2rem;
+
+}
+.about .description .left {
+  flex: 1;
+}
+.about .description .left p {
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: justify;
+}
+.about .description .name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.about .description .right {
+  flex: 0.75;
+}
+.about .description .right > ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.about .description .right > ul > li {
+  margin: 0px;
+  width: 100%;
+}
+.about .description .right > ul > li span {
+  min-width: 90px;
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+.about .description .right > ul > li a {
+  text-decoration: none;
+  color: #787878;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about .description .right > ul > li a:hover {
+  color: #000;
+  letter-spacing: 2px;
+}
+/*MEDIA*/
+@media screen and (max-width:1100px){
+  .about .description_inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .description .right{
+    padding: 0;
+  }
+}
+@media screen and (max-width:650px){
+    .description .name{
+        font-size: 21px !important;
+        text-align: center;
+    }
+    .about .description .left{
+        text-align: center;
+    }
+    .about .description .right{
+        display: flex;
+        justify-content: center;
+    }
+}
+

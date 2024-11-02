@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+body.dark ::-webkit-input-placeholder {
+  color: #fff;
+}
+body.dark :-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+body.dark ::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+body.dark :-ms-input-placeholder {
+  color: #fff;
+}
+body.dark ::-ms-input-placeholder {
+  color: #fff;
+}
+
+
+body.dark ::placeholder {
+  color: #fff;
+}
+
+
+body.dark {
+  background-color: #000;
+  color: #bbb;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+  color: #fff;
+}
+
+body.dark .navbar .menu > ul li {
+  color: #bbb;
+}
+body.dark .navbar .menu > ul li:hover {
+  color: #fff;
+}
+
+body.dark .navbar .logo img {
+  filter: invert(1);
+}
+body.dark .header .avatar .image {
+    background-image: url('../../assets/img/me.png') !important;
+}
+body.dark .btn_warpper .btn {
+  background-color: #fff;
+  color: #000;
+}
+body.dark .about .description .right > ul > li a {
+  color: #bbb;
+}
+body.dark .about .description .right > ul > li a:hover {
+  color: #fff;
+}
+body.dark .about .description .right > ul > li span {
+  color: #fff;
+}
+body.dark .modalbox_about h3{
+  color: #111 ;
+}
+body.dark .contact .fields .form-control input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+body.dark .contact .fields .form-control textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+body.dark .contact .fields .form-control input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+body.dark .contact .fields textarea:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+body.dark .contact .fields textarea {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-style: italic;
+}
+body.dark .contact .contact-wrapper a{
+  color: black;
+}
+body.dark .contact .button{
+  background-color: #fff;
+  color: black;
+}
+///////////////////////////////////////////
+body.dark .icon{
+  color: #fff;
+}
+body.dark .res-menu,
+body.dark .navbar{
+  background-color: black;
+}
+
+body.dark .portfolio .work-content h4{
+  color: #000 !important;
+}
+body.dark .portfolio .active{
+  color: #fff;
+  font-weight: 700;
+}
+body.dark #cursor-dot{
+  background-color:lightgray;
+}
+body.dark #cursor-dot-outline{
+  border:1px solid lightgray;
+}
+body.dark .social svg{
+  fill: #fff;
+}
+body.dark .social div{
+  background-color:lightgray;
+}
